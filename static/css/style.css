@@ -636,3 +636,10 @@ body {
         margin-top: 0px;
     }
 }
+.htapMore{
+display: none !important;
+}
+
+.htapTipContainer{
+	overflow: hidden !important;
+}
