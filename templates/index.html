@@ -9,25 +9,32 @@
 {% endblock %}
 
 {% block content %}
-<div class="header text-center">Don't have an account? 
+<div class="header">
+	{% include "header.html" %}
+	
+	<div>
+	</div>
 		<a class="btn btn-default" href="{{ signup_url }}">Signup</a>
 	</div>
 	{% include "carousel.html" %}
 	<div class="bgc-transparency">
 		<div class="container">
 			<div class="content">	
-				{% include "social_account.html" %}
-				<div class="account-box login-box text-center pull-right">
-					<h3>Login to <span class="text-success">Django RSS</span></h3>
-					<legend></legend>
-					<form action='' method="POST" role="form">
-						{% csrf_token %}
-						<legend></legend>
-						{% buttons %}
-							<button type="submit" class="btn btn-success">{% bootstrap_icon "log-in" %} Login</button>
-						{% endbuttons %}
-					</form>
-				</div>
+				<div class="pull-left social-box text-center">
+	<h3>Django RSS App</h3>
+	<h5>This is a demo rss app created using Django Framework.</h5>
+	<h5>Login with your favorite social account:</h5>
+	<div>
+		<a class="facebook-button btn btn-lg auth-button" href="">Facebook</a>
+		<a class="twitter-button btn btn-lg auth-button" href="">Twitter</a>
+		<a class="google-button btn btn-lg auth-button" href="" method="oauth2">Google</a>
+		<a class="github-button btn btn-lg auth-button" href="">Github</a>
+	</div>
+	{% if request.path != '/accounts/signup/' %}
+		<p class="text-center">If you don't want to use a social Login create a traditional account <a href="{{ signup_url }}">here</a>.</p>
+	{% endif %}
+</div>
+				
 				<div class="clear"></div>
 			</div>
 		</div>
