@@ -39,6 +39,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'getwellapp',
+
+    #Third app
+    'requests',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -84,4 +87,3 @@ STATICFILES_DIRS = "static",
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
-
