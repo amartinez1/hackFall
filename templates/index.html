@@ -1,3 +1,44 @@
-<html>
-	hey
-</html>
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% load staticfiles %}
+
+{% block title %}Login |{% endblock %}
+
+{% block css %}
+	<link rel="stylesheet" href="{% static '../static/css/accounts.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="header text-center">Don't have an account? 
+		<a class="btn btn-default" href="{{ signup_url }}">Signup</a>
+	</div>
+	{% include "carousel.html" %}
+	<div class="bgc-transparency">
+		<div class="container">
+			<div class="content">	
+				{% include "social_account.html" %}
+				<div class="account-box login-box text-center pull-right">
+					<h3>Login to <span class="text-success">Django RSS</span></h3>
+					<legend></legend>
+					<form action='' method="POST" role="form">
+						{% csrf_token %}
+						<legend></legend>
+						{% buttons %}
+							<button type="submit" class="btn btn-success">{% bootstrap_icon "log-in" %} Login</button>
+						{% endbuttons %}
+					</form>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+{% endblock %}
+
+{% block js %}
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.carousel').carousel({interval: 5000});
+		});
+	</script>
+{% endblock %}
