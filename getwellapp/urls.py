@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from .views import IndexView
+from .views import IndexView ,getCoordinates
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'getwell.views.home', name='home'),
@@ -7,4 +7,6 @@ urlpatterns = patterns('',
 
    
     url(r'^$', IndexView.as_view(), name='index'),
+
+	url(r'^getCoordinates/$', getCoordinates, name='coor'),
 )

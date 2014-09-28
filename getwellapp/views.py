@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
-
+from django.shortcuts import HttpResponse
+import httplib
 import requests
 import json
 
@@ -39,3 +40,17 @@ def sendGrid(to, message):
 
     r = requests.post(globalUrl, data=json.dumps(data), headers=headers)
     return r.json()
+
+
+
+
+def getCoordinates(request):
+    if request.GET:
+        connection = httplib.HTTPConnection('intrinsecus.crypticocorp.com', 80)
+        connection.connect()
+        latitude = request.GET['latitude']
+        longitude = request.GET['longitude']
+        connection.request('GET', 'http://intrinsecus.crypticocorp.com/api/namespaces/ads/sources/hospitales/data/?geometry__intersects=Point(['+longitude+','+latitude+']).buffer(0.08)&_format=json', '', {})
+        result = json.loads(connection.getresponse().read())
+        return HttpResponse(json.dumps(result), content_type='application/json')
+    return HttpResponse('')
