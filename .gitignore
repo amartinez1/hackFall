@@ -1,0 +1,5 @@
+myenv
+
+*.pyc
+
+hackFall/ignore_directory
