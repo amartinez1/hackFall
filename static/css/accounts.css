@@ -3,18 +3,49 @@
 	padding-top: 80px;
 }
 
+body
+{
+	width: 200%;
+	overflow: hidden;
+}
+
+
+.h7
+{
+	font-size:6em;
+	
+}
+
+.box
+{
+		color:white;
+
+	background-color: rgba(0,0,0,0.1);
+	display: inline-block;
+	margin: 5px;
+}
+.content
+{
+	width: 50%;
+	float: left;
+}
+
 .container{
-	width: 1150px !important;
+width: inherit;
 }
 
 .bgc-transparency{
 	background-color: rgba(0,0,0, 0.4);
+	z-index:-1;
 }
 
 .social-box{
-	margin-top: 40px;
-	width: 700px;
-	padding: 25px;
+margin-top: 40px;
+/* width: 45%; */
+/* padding: 25px; */	/*width: 45%;*/
+/*	padding: 25px;
+*/	/*margin-left: 50%;
+	margin-right: 50%;*/
 }
 
 .social-box > h3, .social-box > h4,
@@ -95,6 +126,11 @@
 .carousel img {
     background-size: cover;
     -moz-background-size: cover;
+}
+
+.carousel-inner
+{
+	position:fixed;
 }
 
 .carousel-inner .one {
@@ -195,5 +231,6 @@
 
 .header
 {
-	background-color: 
+	background-color: #444444;
+	color:white;
 }
