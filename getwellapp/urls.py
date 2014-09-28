@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from .views import IndexView ,getCoordinates
+from .views import IndexView ,getCoordinates, sendGrid, twilio
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'getwell.views.home', name='home'),
@@ -9,4 +9,6 @@ urlpatterns = patterns('',
     url(r'^$', IndexView.as_view(), name='index'),
 
 	url(r'^getCoordinates/$', getCoordinates, name='coor'),
+	url(r'^sendgrid/$', sendGrid, name='sendGrid'),
+	url(r'^twilio/$', twilio, name='twilio'),
 )
