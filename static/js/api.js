@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$("#send-btn").click(function(){
 		var emailBody = $(".htapQuestionContainer").html();
-		var smsBody = $("#questionID").find(".htapSection").text();
+		var smsBody = "A mosquito borne infection similar ";
 		smsb = String(smsBody);
 		
  
@@ -10,8 +10,6 @@ $(document).ready(function() {
  
 		$("#check").removeClass('show').addClass('hide');
         $("#loading").removeClass('hide').addClass('show');
- 
-        
  
 		$.ajax({
   		url: "/twilio/",

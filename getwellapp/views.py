@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.shortcuts import HttpResponse
 import httplib
@@ -26,8 +25,9 @@ def twilio(request):
  
         headers = {'Authorization': 'Element ' + element}
  
-        r = requests.post(globalUrl, data=json.dumps(data), headers=headers)
+        requests.post(globalUrl, data=json.dumps(data), headers=headers)
     return HttpResponse()
+
 
 def sendGrid(request):
     to = request.GET['to']
@@ -43,10 +43,8 @@ def sendGrid(request):
  
     headers = {'Authorization': 'Element ' + element}
  
-    r = requests.post(globalUrl, data=json.dumps(data), headers=headers)
+    requests.post(globalUrl, data=json.dumps(data), headers=headers)
     return  HttpResponse()
-
-
 
 
 def getCoordinates(request):

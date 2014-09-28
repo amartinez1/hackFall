@@ -48,9 +48,10 @@
 			</div><!-- /row -->
 			<div id="home-row-2" class="row clearfix">
 				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="2"><img src="/static/images/s02.png"></div><span>ASK DOCTORS</span></div>
-				
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src="/static/images/s01.png"></div><span>GET AND SEND HEALTHY TIPS</span></div>
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="6"><img src="/static/images/s03.png"></div><span>EMERGENCY? FIND THE NEAREST HOSPITAL</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src="/static/images/s03.png"></div><span>GET AND SHARE HEALTHY TIPS</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="6"><img src="/static/images/s01.png"></div><span>EMERGENCY? FIND THE NEAREST HOSPITAL</span></div>
+	
+
 
 			</div><!-- /row -->
 		</div><!-- /container -->
@@ -72,7 +73,7 @@
 									}
 						</style>
  
-<script type="text/javascript" src="https://www.healthtap.com/widget/askdoc.js" ></script><div id="htapWidgetAskdoc" doctor="" color="rgb(246, 246, 246)" style="height: 540px; width: 300px; margin: 0 auto;"><span>Powered by</span> <a href="https://www.healthtap.com">HealthTap</a></div>	
+<script type="text/javascript" src="https://www.healthtap.com/widget/askdoc.js" ></script><div id="htapWidgetAskdoc" doctor="" color="rgb(246, 246, 246)" style="height: 540px; width: 300px; margin: 0 auto;"><span></span> <a href="https://www.healthtap.com"></a></div>	
 		<div class="form-inline" role="form">
 		  <div class="form-group">
 		    <div class="input-group">
@@ -92,8 +93,8 @@
 		  	</div>
 		  </div>
 		  <div class="form-group" style="width: 60px;">
-		  	<img src="{% static 'images/loading.GIF' %}" alt="" class="hide" id="loading" >
-			<img src="{% static 'images/check.png' %}" alt="" class="hide" id="check">
+		  	<p class="hide" id="loading" style="color: white; font-weight: bold; font-size: 17px; margin-top: 0px;">Loading...</p>
+			<img src="{% static 'images/check.png' %}" alt="" class="hide" id="check" style="height: 33px;">
 			<p class="text-danger hide">Error the message was not send.</p>
 		  </div>
 		</div>
@@ -110,10 +111,10 @@
 	<div class="slide story" id="slide-5" data-slide="5">
 		<div class="container">
 			<div class="row title-row">
-				<div class="col-12 font-thin"><span class="font-semibold">Send</span> A Health Tip</div>
+				<div class="col-12 font-thin"><span class="font-semibold">Share</span> A Health Tip</div>
 			</div><!-- /row -->
 			<div class="row line-row">
-				<script type="text/javascript" src="https://www.healthtap.com/widget/tips.js" ></script><div id="htapWidgetTips" style="height: 540px; width: 300px; margin: 0 auto;"><span>Powered by</span> <a href="https://www.healthtap.com">HealthTap</a></div>
+				<script type="text/javascript" src="https://www.healthtap.com/widget/tips.js" ></script><div id="htapWidgetTips" style="height: 540px; width: 300px; margin: 0 auto;"><span></span> <a href="https://www.healthtap.com">HealthTap</a></div>
 
 				
 			</div><!-- /row -->
@@ -129,13 +130,13 @@
 	<!-- === Slide 6 / Contact === -->
 	<div id ="hospitals"class="slide story" id="slide-6" data-slide="6" style="padding-bottom: 0; margin-bottom:0;">
 		<div class="container" style="width: 101% !important;margin-left: 0 !important;margin-right: 0 !important; /* padding-bottom: 0; */ padding-left: 0;max-width: 101% !important ;">
-			<div class="row title-row">
+			<div class="row title-row" style="padding-bottom: 0px;">
 				<div class="col-12 font-light">Hospitals<span class="font-semibold"> Nearby</span></div>
 			</div><!-- /row -->
 			<div class="row line-row">
 				
 			</div><!-- /row -->
-			<div class="row subtitle-row" style="width: 100%;margin-left: 0;margin-right: 0; padding-bottom: 0;">
+			<div class="row subtitle-row" style="width: 100%;margin-left: 0;margin-right: 0; padding-bottom: 0; padding-top: 0px;">
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>
 
 				<div id="map-canvas"></div>
