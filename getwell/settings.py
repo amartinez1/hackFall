@@ -42,6 +42,7 @@ INSTALLED_APPS = (
 
     #Third app
     'requests',
+    'bootstrap3'
 )
 
 MIDDLEWARE_CLASSES = (

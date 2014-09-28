@@ -1,0 +1,199 @@
+/* common */
+.bgc-transparency{
+	padding-top: 80px;
+}
+
+.container{
+	width: 1150px !important;
+}
+
+.bgc-transparency{
+	background-color: rgba(0,0,0, 0.4);
+}
+
+.social-box{
+	margin-top: 40px;
+	width: 700px;
+	padding: 25px;
+}
+
+.social-box > h3, .social-box > h4,
+.social-box > h5, .social-box > p{
+	color: white;
+}
+
+.auth-button{
+	color: white;
+	width: 120px;
+	margin-bottom: 10px;
+}
+
+.auth-button:hover{
+	color: #eee;
+}
+
+.facebook-button{
+	background: -webkit-linear-gradient(#3b5998, #4D68A1)!important; /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#3b5998, #4D68A1)!important; /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#3b5998, #4D68A1)!important; /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#3b5998, #4D68A1)!important; /* Standard syntax */
+}
+
+.twitter-button{
+	background: -webkit-linear-gradient(#4293DB, #55A4EB)!important; /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#4293DB, #55A4EB)!important; /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#4293DB, #55A4EB)!important; /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#4293DB, #55A4EB)!important; /* Standard syntax */
+}
+
+.google-button{
+	background: -webkit-linear-gradient(#CF443A, #D3342C)!important; /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#CF443A, #D3342C)!important; /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#CF443A, #D3342C)!important; /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#CF443A, #D3342C)!important; /* Standard syntax */
+}
+
+.github-button{
+	color: black!important;
+	background: -webkit-linear-gradient(#EFEFEF, #F7F7F7)!important; /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#EFEFEF, #F7F7F7)!important; /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#EFEFEF, #F7F7F7)!important; /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#EFEFEF, #F7F7F7)!important; /* Standard syntax */
+}
+
+.account-box{
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+	display: block;
+	padding: 25px;
+	width: 420px;
+	background: white;
+}
+
+.account-box > h3{
+	margin-top: 5px;
+}
+
+.carousel { z-index: -99; } /* keeps this behind all content */
+.carousel .item, .bgc-transparency {
+    position: fixed; 
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.carousel img {
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+.carousel-inner .one {
+    background: url(/static/images/backgrounds/1.png);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+.carousel-inner .two {
+    background: url(/static/images/backgrounds/2.png);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+.carousel-inner .three {
+    background: url(/static/images/backgrounds/3.png);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+.carousel-inner .four {
+    background: url(/static/images/backgrounds/4.png);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.carousel-inner .five {
+    background: url(/static/images/backgrounds/5.png);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+
+.footer{
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	padding: 12px;
+	background-color: #eee;
+}
+/* end common*/
+
+/* login */
+.login-box{
+	margin-top: 40px;
+}
+
+.login-box label{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.login-box input[type="email"], 
+.login-box input[type="password"],
+.login-box input[type="text"]{
+	width: 206px;
+	margin: 0 auto;
+}
+/* endlogin */
+
+/* register */
+.register-box{
+	margin-top: -30px;
+}
+
+.register-box label{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.first-last-box{
+	width: 185px!important;
+}
+
+.first-last-box input[type="text"]{
+	width: 183px!important;
+}
+
+.checkbox{
+	margin-left: 120px;
+	margin-right: 110px;
+}
+/* end register */
+
+
+.header
+{
+	background-color: 
+}
